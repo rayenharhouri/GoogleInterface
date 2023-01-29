@@ -1,0 +1,141 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #1d1d1d;
+    color: rgba(255, 255, 255, .9);
+    font-family: Arial, sans-serif;
+}
+.sign{
+  
+        border: 1px solid #4285f4;
+        font-weight: bold;
+        outline: none;
+        background: #4285f4;
+        color: #fff;
+        padding: 7px 12px;
+        border-radius: 3px;
+        margin-left: 7px;
+     cursor: pointer;
+    
+}
+.head{
+    display: flex;
+    justify-content:end;
+    padding: 30px;
+}
+.head iconify-icon{
+    padding:0 20px;
+}
+.head .img{
+    padding-left: 20px;
+}
+.head .text{
+    padding: 2px 5px 1px;
+    margin-bottom: 7px;
+    border-radius: 50%;
+    background-color: green;
+}
+.head .line:hover{
+    text-decoration: underline;
+}
+main{
+    text-align: center;
+}
+main .logo{
+    font-size: 5rem;
+    color: rgba(255, 255, 255);
+    padding-top: 70px;
+}
+main .search{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px solid rgb(70, 68, 68);
+    margin: 30px 32% 40px;
+    border-radius: 30px;
+}
+.search .find iconify-icon{
+    font-size: 20px;
+    color: gray;
+}
+main .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+a{
+    text-decoration: none;
+}
+main .buttons a{
+    border: 1px solid rgb(70, 68, 68);
+    padding: 15px 15px;
+    margin: 10px;
+    color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    background-color: #0f0c0c;
+}
+main p{
+    margin-top: 40px;
+}
+main p span a{
+    padding: 10px;
+    color: #8ab4f8;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #121212;
+}
+
+
+
+footer h4 {
+	color: white;
+	font-size: 15px;
+	line-height: 39.5px;
+	font-weight: 400;
+	padding-left: 29px;
+
+}
+footer a {
+	color: #5f6368;
+	display: inline-block;
+	padding: 12px 11.3px;
+	font-size: 14px;
+}
+footer a:hover {
+	text-decoration: underline;
+}
+.links {
+	border-top: 1px solid #ddd;
+	display: flex;
+}
+.link-1 {
+	padding-left: 18.7px;
+	flex: 1;
+}
+.link-2 {
+	padding-right: 18.7px;
+}
+
+
+
+
+
+
+    /* #121212 */
+    /* grey or pitch-black */
+    /* Black | Hexadecimal Code: #000000.
+Charcoal | Hexadecimal Code: #36454F.
+Gray | Hexadecimal Code: #808080.
+Russet | Hexadecimal Code: #80461B.
+Tyrian Purple | Hexadecimal Code: #66023C.
+Navy Blue | Hexadecimal Code: #000080.
+Burgundy | Hexadecimal Code: #800020.
+Hunter Green | Hexadecimal Code: #355E3B. */
+/* <iconify-icon icon="ion:leaf"></iconify-icon> */
