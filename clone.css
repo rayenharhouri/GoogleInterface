@@ -4,11 +4,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+	font-family: "arial";
+	src: url("./fonts/arial.ttf") format("truetype");
+  }
+  @font-face {
+	font-family: "sans-serif";
+	src: url("./fonts/SansSerif.ttf") format("truetype");
+  }
 body{
-    background-color: #1d1d1d;
-    color: rgba(255, 255, 255, .9);
-    font-family: Arial, sans-serif;
+    background-color: #202124;
+    color: #bdc1c6;
+    font-family: arial,sans-serif;
+	font-size: 14px;
 }
+
 .sign{
   
         border: 1px solid #4285f4;
@@ -25,7 +35,7 @@ body{
 .head{
     display: flex;
     justify-content:end;
-    padding: 30px;
+    padding: 4px;
 }
 .head iconify-icon{
     padding:0 20px;
@@ -56,11 +66,12 @@ body{
 	position: relative;
 	margin-top: -8px;
 	text-align: center;
+	box-sizing: border-box;
 }
 .s-box .s-input {
 	display: block;
 	border: 1px solid rgb(158, 158, 158);
-	background-color: #1d1d1d;
+	background-color: #202124;
 	font-size: 16px;
 	padding: 13px;
 	padding-left: 45px;
@@ -88,14 +99,16 @@ body{
 	filter: invert(1);
 }
 .s-box .vs-icon {
-	width: 18px;
+	height: 24px;
+    width: 24px;
 	position: absolute;
 	top: 13px;
 	right: 24px;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 .s-box .cm-icon {
-	width: 18px;
+	height: 24px;
+    width: 24px;
 	position: absolute;
 	top: 13px;
 	right: 24px;
@@ -126,7 +139,8 @@ body{
 }
 .lang a {
 	margin-left: 5px;
-	color: #1a0dab;
+	color: #8ab4f8;
+	text-decoration: none;
 }
 .lang a:hover {
 	text-decoration: underline;
@@ -135,35 +149,38 @@ footer{
     width: 100%;
     position: absolute;
     bottom: 0;
-    background-color: #121212;
+    background-color: #171717;
 }
 
 
 
 footer h4 {
-	color: white;
+    color: #bdc1c6;
 	font-size: 15px;
-	line-height: 39.5px;
+    padding: 15px 30px;
 	font-weight: 400;
-	padding-left: 29px;
+
+	border-bottom: 1px solid #3c4043;
 
 }
 footer a {
-	color: #5f6368;
+	color: #bdc1c6;
 	display: inline-block;
 	padding: 12px 11.3px;
-	font-size: 14px;
+	font-size: 15px;
+	text-decoration: none;
 }
 footer a:hover {
 	text-decoration: underline;
 }
 .links {
-	border-top: 1px solid #ddd;
+	
 	display: flex;
 }
 .link-1 {
 	padding-left: 18.7px;
 	flex: 1;
+	
 }
 .link-2 {
 	padding-right: 18.7px;
