@@ -186,19 +186,13 @@ footer a:hover {
 	padding-right: 18.7px;
 }
 
+label, input { display:block }   
+input.text { margin-bottom:12px; width:95%; padding: .4em; }
+fieldset { padding:0; border:0; margin-top:25px; }
+
+ .ui-dialog .ui-state-error { padding: .3em; }
 
 
 
 
 
-    /* #121212 */
-    /* grey or pitch-black */
-    /* Black | Hexadecimal Code: #000000.
-Charcoal | Hexadecimal Code: #36454F.
-Gray | Hexadecimal Code: #808080.
-Russet | Hexadecimal Code: #80461B.
-Tyrian Purple | Hexadecimal Code: #66023C.
-Navy Blue | Hexadecimal Code: #000080.
-Burgundy | Hexadecimal Code: #800020.
-Hunter Green | Hexadecimal Code: #355E3B. */
-/* <iconify-icon icon="ion:leaf"></iconify-icon> */
