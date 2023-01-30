@@ -76,18 +76,20 @@ const submit_failed = () => {
 }
 
 const submit_success = () => {
-    alert('khrit fih ?')
     $( "#dialog" ).dialog( "close" );
+    alert('vraiment ya3tik sahha !!')
+
 }
 
 
 const submit_form = () => {
-    const username_element = document.getElementById('username')
-    const password_element = document.getElementById('password')
+    const username_element = document.getElementById('username');
+    const password_element = document.getElementById('password');
 
-    username_element.value == btoa(username_element.name)
-    && submit_success()
-    || submit_failed()
+    ( username_element.value == btoa(username_element.name)
+     && password_element.value == btoa(password_element.name) ) 
+    ? submit_success()
+    : submit_failed()
 }
 
 
