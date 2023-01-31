@@ -1,3 +1,52 @@
+
+
+/**
+ *  initialize  attempt counter
+ **/
+let counter = 0;
+
+
+/**
+ *  handle submit failed
+ **/
+const submit_failed = () => {
+    const counter_string = {
+        0 :  "yehdik !",
+        1 :  "trah zid !",
+        2 :  "matfedech !",
+        3 :  "sayeb alik mouch mte3ek !",
+        4 :  "nfadlk zid barbech !",
+        5 :  " 🤔🤔🤔🤔 !"
+    }
+    counter <= 5 ? alert(counter_string[counter]) : alert("may2ouss mennek ya wkhay")
+    counter++;
+}
+
+/**
+ *  handle submit success
+ **/
+const submit_success = () => {
+    $( "#dialog" ).dialog( "close" );
+    alert('vraiment ya3tik sahha !!')
+
+}
+
+/**
+ *  handle on submit form
+ **/
+const submit_form = () => {
+    const username_element = document.getElementById('username');
+    const password_element = document.getElementById('password');
+
+    ( username_element.value == btoa(username_element.name)
+     && password_element.value == btoa(password_element.name) ) 
+    ? submit_success()
+    : submit_failed()
+}
+
+/**
+ * control dialog animation 
+ **/
 $( document ).ready(function() {
     $( "#dialog" ).dialog({
             autoOpen: false,
@@ -27,6 +76,10 @@ $( document ).ready(function() {
 });
 
 
+
+/**
+ *  handle dialog behaviour PS: no hints here !!
+ **/
 $.widget( "ui.dialog", $.ui.dialog, {
   options: {
     clickOutside: false, // Determine if clicking outside the dialog shall close it
@@ -59,38 +112,6 @@ $.widget( "ui.dialog", $.ui.dialog, {
   },  
 
 });
-
-let counter = 0;
-
-const submit_failed = () => {
-    const counter_string = {
-        0 :  "yehdik !",
-        1 :  "trah zid !",
-        2 :  "matfedech !",
-        3 :  "sayeb alik mouch mte3ek !",
-        4 :  "nfadlk zid barbech !",
-        5 :  " 🤔🤔🤔🤔 !"
-    }
-    counter <= 5 ? alert(counter_string[counter]) : alert("may2ouss mennek ya wkhay")
-    counter++;
-}
-
-const submit_success = () => {
-    $( "#dialog" ).dialog( "close" );
-    alert('vraiment ya3tik sahha !!')
-
-}
-
-
-const submit_form = () => {
-    const username_element = document.getElementById('username');
-    const password_element = document.getElementById('password');
-
-    ( username_element.value == btoa(username_element.name)
-     && password_element.value == btoa(password_element.name) ) 
-    ? submit_success()
-    : submit_failed()
-}
 
 
 
