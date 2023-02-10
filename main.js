@@ -5,7 +5,7 @@ let attempts = 0;
 
 button.addEventListener('click', function() {
     const userGuess = textarea.value;
-    if (userGuess === '2000') {
+    if (userGuess === '1999') {
         displaySuccessToaster('Congratulations, your answer is correct!');
 
     } else {
