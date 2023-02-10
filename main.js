@@ -1,8 +1,17 @@
 const textarea = document.querySelector('textarea');
-const button = document.querySelector('button');
+const hint = document.getElementById('tn');
+const button = document.getElementById('nt');
 
 let attempts = 0;
-
+var test = 0 ;
+hint.addEventListener('click', function() {
+    test = 1 ;
+    displaySuccessToaster("Can you guess the year of birth of the athlete boy ?");
+});
+button.addEventListener('click', function() {
+    test = 0 ;     
+    displaySuccessToaster('Congratulations, you found it !');  
+});
 button.addEventListener('click', function() {
     const userGuess = textarea.value;
     if (userGuess === '1999') {
@@ -23,6 +32,11 @@ function displaySuccessToaster(message) {
     const successMessage = document.querySelector('#success-message');
     successMessage.textContent = message;
     successToaster.style.display = 'block';
+    if (test==1) {
+        successToaster.style.backgroundColor = 'orange';
+    } else {
+        successToaster.style.backgroundColor = 'green';
+    }
 
     setTimeout(function() {
         successToaster.style.display = 'none';
