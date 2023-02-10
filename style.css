@@ -1,0 +1,107 @@
+body{
+    background-size: cover;
+    background-image: url("https://color-hex.org/colors/202124.png");
+    background-position: center;
+
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    position: relative;
+    height: 64vh;
+
+}
+.row2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.col-md-4 {
+    width: 33.3333%;
+    padding: 0 10px;
+    text-align: center;
+
+
+}
+
+.image{
+    width: 50%;
+    height: auto;
+
+}
+.image4{
+    margin-top: 90%;
+    left: -70%;
+    width: 90%;
+    height: auto;
+    position: relative;
+}
+.image5{
+    top:0;
+    margin-bottom: 21%;
+    width: 80%;
+    height: auto;
+}
+
+.image6{
+    margin-top:90%;
+    margin-left:100%;
+    width: 80%;
+    height: auto;
+}
+
+button.rounded-button {
+    border-radius: 50px;
+    color: #fff5f7;
+    width: 12%;
+    background-color: grey;
+    border: 1px solid grey;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+    margin-top:1%;
+    z-index: 1;
+
+
+}
+textarea{
+    width: 300px;
+    height: 100px;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+#success-toaster {
+    position: fixed;
+    top:1%;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+#failure-toaster {
+    position: fixed;
+    top:1%;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.attempts{
+    position: absolute;
+    top: 2%;
+    right: 2%;
+}
